@@ -10,10 +10,10 @@ $sql = "SELECT * FROM khachhang";
 if ($result = mysqli_query($conn, $sql)) {
     if(mysqli_num_rows ($result) > 0) {
         while ($row = mysqli_fetch_array($result)){
-               echo $row['makh'];
-               echo $row['tenkh'];
-               echo $row['namsinh'];
-               echo $row['dienthoai'];
+               echo $row['makh']. " | ";
+               echo $row['tenkh']. " | ";
+               echo $row['namsinh']. " | ";
+               echo $row['dienthoai']. " | ";
                echo $row['diachi'] . "<br>";
         }
 
